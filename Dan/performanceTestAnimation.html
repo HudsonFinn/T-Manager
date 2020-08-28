@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <style>
+    #container {
+      height: 100px;
+      width: 100px;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <div id="container"> </div>
+  <script>
+    var t = d3.transition()
+              .duration(4000);
+    d3.select("#container")
+      .transition(t)
+      .style("background-color", "yellow");
+
+    var svg = d3.select("body")
+                .append("svg")
+                .attr("width",500)
+                .attr("height",500);
+
+    var bar1 = svg.append("rect")
+                  .attr("fill", "steelblue")
+                  .attr("x", 100)
+                  .attr("y", 20)
+                  .attr("height", 0)
+                  .attr("width", 20);
+
+    var bar2 = svg.append("rect")
+                  .attr("fill","steelblue")
+                  .attr("x", 125)
+                  .attr("y", 20)
+                  .attr("height", 0)
+                  .attr("width", 20);
+
+    update();
+
+    function update() {
+      bar1.transition()
+          .ease(d3.easeLinear)
+          .duration(1000)
+          .attr("height", 200);
+
+      bar2.transition()
+          .ease(d3.easeLinear)
+          .duration(1000)
+          .delay(1000)
+          .attr("height", 300);
+    }
+  </script>
+</body>

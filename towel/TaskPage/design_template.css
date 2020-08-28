@@ -1,0 +1,41 @@
+body
+{font-family: Arial, Helvetica, sans-serif;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #a78db8;
+    z-index: 3;
+    width: 80%
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    position: fixed;
+  }
+.container{
+  width: 80%;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #000000 !important;
+    transition: 0.3s;
+  }
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #a78db8 !important;
+    background-color: #000000 !important;
+  }
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #000000 !important;
+  }
+.jumbotron {
+    background-color: #e6ffff;
+    color: #000000;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+    border-radius: 5px;
+  }

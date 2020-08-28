@@ -1,0 +1,30 @@
+body{
+    font:0.8em Arial;
+    position: absolute;
+}
+.tasks{
+    border:1px solid #ccc;
+    width:250px;
+    height:210px;
+    padding:10px;
+    overflow-y: scroll;
+}
+
+
+ .task a{
+    color:firebrick;
+}
+.task p{
+    margin: 5px 0;
+}
+html{
+    position: absolute;
+}
+
+.item {
+    height: 50px;
+    width:50px;
+    position: absolute;
+    background: orange;
+    
+}

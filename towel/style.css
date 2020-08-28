@@ -1,0 +1,46 @@
+
+@import("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css");
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+.transbox {                     
+      margin-left: auto;
+      margin-right: auto;
+      height: 600px;
+      width: 80%;
+      background-color: #ffffff;
+      border: 2px solid black;
+      background: #FAEBD7
+    }
+  .container {
+    padding: 16px;
+    
+    /*background-color: rgb(218, 143, 45);*/
+  }
+
+    .navbar {
+    margin-bottom: 0;
+    background-color: #e6ffff;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #000000 !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #e6ffff !important;
+    background-color: #000000 !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #000000 !important;
+  }
+    .jumbotron {
+    background-color: #e6ffff;
+    color: #000000;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }

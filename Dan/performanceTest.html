@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+  <style>
+    .myclass{
+      color:'red';
+      font-size : '20px';
+    }
+  </style>
+  <p id="p1" class="myclass "> First paragraph </p>
+  <p id="p1" class="myclass "> Second paragraph </p>
+  <p id="p1"> Third paragraph </p>
+  <div style = "border:1px solid" >
+    <p> Another paragraph. </p>
+  </div>
+  <script>
+    //d3.selectAll(".myclass ").style("font-size","20px");
+    //d3.select("body").append("p").text("This is a paragraph.");
+    //d3.select("div").insert("p").text("Extra");
+    //d3.select("#p2").remove();
+    //d3.select("#p3").html("<span> This is the new inner html. </span>");
+    //d3.select("#p3").classed("myclass",true);
+    var data = [100,200,300];
+    var paragraph = d3.select("body")
+              .selectAll("#p1")
+              .data(data)
+              .text(function(d, i){
+                console.log("d: " + d);
+                console.log("i: " + i);
+                console.log("this: " + this);
+
+                return d;
+              });
+    d3.selectAll("#p1").style("color", function(d, i) {
+      var text = this.innerText;
+
+      if (text.indexOf("100") == 0){
+        return "red";
+      }
+      else if (text.indexOf("200") == 0){
+        return "yellow";
+      }
+      else {
+        return "blue";
+      }
+    });
+  </script>
+</body>

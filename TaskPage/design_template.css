@@ -1,0 +1,56 @@
+body
+{font-family: Arial, Helvetica, sans-serif;
+      background: url('ducs.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #e6ffff;
+    z-index: 3;
+    width: 80%
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    position: fixed;
+  }
+.container{
+  width: 80%;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #000000 !important;
+    transition: 0.3s;
+  }
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #e6ffff !important;
+    background-color: #000000 !important;
+    transition: 0.3s;
+  }
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #000000 !important;
+  }
+.jumbotron {
+    background-color: #e6ffff;
+    color: #000000;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+    border-radius: 5px;
+  }
+  button {
+    background-color:#a78db8;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid rgba(0,0,0,0.5);
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;
+    background-color: #a78db8;
+  }

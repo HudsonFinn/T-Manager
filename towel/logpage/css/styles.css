@@ -1,0 +1,71 @@
+body{
+    font:0.8em Arial;
+
+}
+.feed .logs{
+    border:1px solid #ccc;
+    width:80%;
+    height:70vh;
+    padding:20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow-y: scroll;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*transparency*/
+    position: relative;
+    background: rgba(204, 204, 204, 0.6);
+    border: 0;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.feed{
+
+    width: 100vw;
+    height:40px;
+    padding: 5px;
+    padding-top:50px;
+    margin-top: 20vh;
+    font: 1em Aria;
+}
+.feed .log a{
+    color:firebrick;
+    font-family: sans-serif;
+
+}
+
+.feed .log p{
+    margin: 5px 0;
+}
+/*and now style for the menu*/
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #e6ffff;
+    z-index: 3;
+    width: 80%
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    position: fixed;
+  }
+.container{
+  width: 80%;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #000000 !important;
+    transition: 0.3s;
+  }
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #e6ffff !important;
+    background-color: #000000 !important;
+    transition: 0.3s;
+  }
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #000000 !important;
+  }
